@@ -28,9 +28,13 @@ public func run<T>(_ block: (() -> T)) -> T {
 public protocol Run {}
 public extension Run where Self: Any {
 
-    /**
-     * Calls the specified function [block] with `this` value as its receiver and returns its result.
-     */
+    ///  `run`
+    ///
+    ///  let org = run { () -> Organazation in
+    ///    someFunc1()
+    ///    someFunc2()
+    ///    return Organazation(name: "podo")
+    ///  }
     @discardableResult
     func run<T>(_ block: (() -> T)) -> T {
         return block()

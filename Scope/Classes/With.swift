@@ -20,7 +20,12 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-// can only class
+///  `with`
+///
+///  with(organization.member) {
+///    $0.name = "podo"
+///    $0.role = .owner
+///  }
 @discardableResult
 public func with<T, R>(_ receiver: T, _ block: ((T) -> R)) -> R {
     return block(receiver)

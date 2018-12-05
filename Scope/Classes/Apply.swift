@@ -23,6 +23,12 @@
 public protocol Apply {}
 public extension Apply where Self: Any {
 
+    ///  `apply`
+    ///
+    ///  let org = Organazation().apply {
+    ///    someFunc1()
+    ///    someFunc2()
+    ///  }
     @discardableResult
     func apply(_ block: (() -> Void)) -> Self {
         block()
