@@ -14,6 +14,7 @@
 		2DD20D7021B311F600572863 /* Also.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D6F21B311F600572863 /* Also.swift */; };
 		2DD20D7221B3128700572863 /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D7121B3128700572863 /* Apply.swift */; };
 		2DD20D7621B3E24600572863 /* Scope.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2DD20D7521B3E24600572863 /* Scope.podspec */; };
+		2DD20D7E21B3F7F600572863 /* ScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D7D21B3F7F600572863 /* ScopeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,10 +27,20 @@
 		2DD20D6F21B311F600572863 /* Also.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Also.swift; sourceTree = "<group>"; };
 		2DD20D7121B3128700572863 /* Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
 		2DD20D7521B3E24600572863 /* Scope.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Scope.podspec; sourceTree = SOURCE_ROOT; };
+		2DD20D7B21B3F7F600572863 /* ScopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DD20D7D21B3F7F600572863 /* ScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeTests.swift; sourceTree = "<group>"; };
+		2DD20D7F21B3F7F600572863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2D18866521AEF8CD009E4D87 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DD20D7821B3F7F600572863 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				2D18866A21AEF8CD009E4D87 /* Scope */,
+				2DD20D7C21B3F7F600572863 /* ScopeTests */,
 				2D18866921AEF8CD009E4D87 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				2D18866821AEF8CD009E4D87 /* Scope.framework */,
+				2DD20D7B21B3F7F600572863 /* ScopeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -86,6 +99,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2DD20D7C21B3F7F600572863 /* ScopeTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DD20D7D21B3F7F600572863 /* ScopeTests.swift */,
+				2DD20D7F21B3F7F600572863 /* Info.plist */,
+			);
+			path = ScopeTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -118,6 +140,23 @@
 			productReference = 2D18866821AEF8CD009E4D87 /* Scope.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		2DD20D7A21B3F7F600572863 /* ScopeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DD20D8021B3F7F600572863 /* Build configuration list for PBXNativeTarget "ScopeTests" */;
+			buildPhases = (
+				2DD20D7721B3F7F600572863 /* Sources */,
+				2DD20D7821B3F7F600572863 /* Frameworks */,
+				2DD20D7921B3F7F600572863 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScopeTests;
+			productName = ScopeTests;
+			productReference = 2DD20D7B21B3F7F600572863 /* ScopeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -131,6 +170,9 @@
 					2D18866721AEF8CD009E4D87 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
+					};
+					2DD20D7A21B3F7F600572863 = {
+						CreatedOnToolsVersion = 10.1;
 					};
 				};
 			};
@@ -148,6 +190,7 @@
 			projectRoot = "";
 			targets = (
 				2D18866721AEF8CD009E4D87 /* Scope */,
+				2DD20D7A21B3F7F600572863 /* ScopeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -158,6 +201,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DD20D7621B3E24600572863 /* Scope.podspec in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DD20D7921B3F7F600572863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +223,14 @@
 				2DD20D6E21B2DB4E00572863 /* With.swift in Sources */,
 				2DD20D7221B3128700572863 /* Apply.swift in Sources */,
 				2DD20D6A21B2DA5000572863 /* Run.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DD20D7721B3F7F600572863 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DD20D7E21B3F7F600572863 /* ScopeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +414,44 @@
 			};
 			name = Release;
 		};
+		2DD20D8121B3F7F600572863 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				INFOPLIST_FILE = ScopeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happytiger.ScopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DD20D8221B3F7F600572863 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				INFOPLIST_FILE = ScopeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.happytiger.ScopeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -373,6 +469,15 @@
 			buildConfigurations = (
 				2D18867121AEF8CE009E4D87 /* Debug */,
 				2D18867221AEF8CE009E4D87 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DD20D8021B3F7F600572863 /* Build configuration list for PBXNativeTarget "ScopeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DD20D8121B3F7F600572863 /* Debug */,
+				2DD20D8221B3F7F600572863 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

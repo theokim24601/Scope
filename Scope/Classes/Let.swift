@@ -23,6 +23,12 @@
 public protocol Let {}
 public extension Let where Self: Any {
 
+    ///  `let`
+    ///
+    ///  org.member?.let {
+    ///    $0.name = "hb1love"
+    ///    $0.role = .owner
+    ///  }
     @discardableResult
     func `let`<T>(_ block: ((Self) -> T)) -> T {
         return block(self)

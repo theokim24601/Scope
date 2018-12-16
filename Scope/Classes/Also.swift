@@ -23,6 +23,12 @@
 public protocol Also {}
 public extension Also where Self: Any {
 
+    ///  `also`
+    ///
+    ///  let org = Organazation().also {
+    ///    $0.name = "podo"
+    ///    $0.member = Member(name: "hb1love", role: .owner)
+    ///  }
     @discardableResult
     func also(_ block: ((Self) -> Void)) -> Self {
         block(self)

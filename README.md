@@ -10,14 +10,47 @@
 
 ## Usage
 
-### Using `run`
+**`also`**, **`with`**, **`let`**, **`run`**, **`apply`**
 
-The `run` function is helpful to:
-- Scope variable into a closure
+
+Initialize Instance with **`also`** in closure
+
+```swift
+let org = Organazation().also {
+    $0.name = "podo"
+    $0.member = Member(name: "hb1love", role: .owner)
+}
+``` 
+
+Similarly, we can be used like this. **`with`**
+
+```swift
+with(organization.member) {
+    $0.name = "podo"
+    $0.role = .owner
+}
+```
+
+Imagine if `organization.member` could be null, maybe it looks like this: Use **`let`** !
+
+```swift
+// so bad..
+with(organization.member) {
+    $0?.name = "hb1love"
+    $0?.role = .owner
+}
+
+// Good!
+org.member?.let {
+    $0.name = "hb1love"
+    $0.role = .owner
+}
+```
+
+it is fully enclosed within the **`run`** scope.
 
 ```swift
 var age = 17
-
 run {
     var age = 27
     print(age) // 27
@@ -25,28 +58,25 @@ run {
 print(age) // 17
 ```
 
-### Using `with`
-
 ```swift
-with(profile.user) {
-    $0.email = "usermail@gmail.com"
-    $0.github = "github.com/hb1love"
+let org = run { () -> Organazation in
+    someFunc1()
+    someFunc2()
+    someFunc3()
+    return Organazation(name: "podo")
 }
 ```
 
-### Using `let`
+Use **`apply`**, when you need any logic after initialization
 
 ```swift
-profile.user.let {
-    $0.email = "usermail@gmail.com"
-    $0.github = "github.com/hb1love"
+let org = Organazation().apply {
+    someFunc1()
+    someFunc2()
 }
 ```
 
-### Using `also`
-
-### Using `apply`
-
+**`apply`** has no parameters. It just returns an instance.
 
 ## Requirements
 
