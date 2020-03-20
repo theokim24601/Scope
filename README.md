@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hb1love/Scope.svg?branch=master)](https://travis-ci.org/hb1love/Scope)
 [![Platform](https://img.shields.io/cocoapods/p/Scope.svg?style=flat)](https://github.com/hb1love/Scope)
-![Swift](https://img.shields.io/badge/Swift-4.2-orange.svg)
+![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)
 [![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://cocoapods.org/pods/Scope)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
@@ -81,8 +81,8 @@ let org = Organazation().apply {
 ## Requirements
 
 - iOS 8.0+
-- Xcode 9.0+
-- Swift 3.0+
+- Xcode 11.3.1+
+- Swift 4.0+
 
 ## Installation
 
