@@ -20,25 +20,27 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+import Foundation
+
 @discardableResult
 public func run<T>(_ block: (() -> T)) -> T {
-    return block()
+  return block()
 }
 
 public protocol Run {}
 public extension Run where Self: Any {
 
-    ///  `run`
-    ///
-    ///  let org = run { () -> Organazation in
-    ///    someFunc1()
-    ///    someFunc2()
-    ///    return Organazation(name: "podo")
-    ///  }
-    @discardableResult
-    func run<T>(_ block: (() -> T)) -> T {
-        return block()
-    }
+  ///  `run`
+  ///
+  ///  let org = run { () -> Organazation in
+  ///    someFunc1()
+  ///    someFunc2()
+  ///    return Organazation(name: "podo")
+  ///  }
+  @discardableResult
+  func run<T>(_ block: (() -> T)) -> T {
+    return block()
+  }
 }
 
 extension NSObject: Run {}

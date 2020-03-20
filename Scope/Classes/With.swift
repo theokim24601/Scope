@@ -28,10 +28,10 @@
 ///  }
 @discardableResult
 public func with<T, R>(_ receiver: T, _ block: ((T) -> R)) -> R {
-    return block(receiver)
+  block(receiver)
 }
 
 @discardableResult
 public func with<T, R>(_ receiver: inout T, _ block: ((inout T) -> R)) -> R {
-    return block(&receiver)
+  block(&receiver)
 }

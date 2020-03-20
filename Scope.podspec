@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Scope"
-  s.version          = "1.1.0"
+  s.version          = "1.2.0"
   s.summary          = "🌷 Scoping Functions of Kotlin Style for Readable Code"
   s.homepage         = "https://github.com/hb1love/Scope"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

@@ -20,20 +20,22 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
+import Foundation
+
 public protocol Apply {}
 public extension Apply where Self: Any {
 
-    ///  `apply`
-    ///
-    ///  let org = Organazation().apply {
-    ///    someFunc1()
-    ///    someFunc2()
-    ///  }
-    @discardableResult
-    func apply(_ block: (() -> Void)) -> Self {
-        block()
-        return self
-    }
+  ///  `apply`
+  ///
+  ///  let org = Organazation().apply {
+  ///    someFunc1()
+  ///    someFunc2()
+  ///  }
+  @discardableResult
+  func apply(_ block: (() -> Void)) -> Self {
+    block()
+    return self
+  }
 }
 
 extension NSObject: Apply {}
