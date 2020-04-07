@@ -2,40 +2,61 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   pull_request:
-    branches: [ master, develop ]
+    branches:
+      - '*'
 
 jobs:
-  test:
+  macOS:
+    name: Test macOS
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: macOS
+        run: set -o pipefail && xcodebuild clean build test -project "Scope.xcodeproj" -scheme "Scope macOS" -destination "platform=macOS" | xcpretty
+  Catalyst:
+    name: Test Catalyst
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Catalyst
+        run: set -o pipefail && xcodebuild clean build test -project "Scope.xcodeproj" -scheme "Scope iOS" -destination "platform=macOS" | xcpretty
+  iOS:
+    name: Test iOS
     runs-on: macOS-latest
     strategy:
       matrix:
-        env:
-          - sdk: iphonesimulator12.2
-            destination: platform=iOS Simulator,name=iPhone XS,OS=12.2
-
-          - sdk: macosx10.14
-            destination: arch=x86_64
-
-          - sdk: appletvsimulator12.2
-            destination: OS=12.2,name=Apple TV
-
+        destination: ["OS=13.3,name=iPhone 11 Pro"]
     steps:
-    - uses: actions/checkout@v1
-
-    - name: Build and Test
-      run: |
-        set -o pipefail && xcodebuild clean build test \
-          -project "$PROJECT" \
-          -scheme "$SCHEME" \
-          -sdk "$SDK" \
-          -destination "$DESTINATION" \
-          -configuration Debug \
-          -enableCodeCoverage YES \
-          CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c;
-      env:
-        PROJECT: Scope.xcodeproj
-        SCHEME: Scope
-        SDK: ${{ matrix.env.sdk }}
-        DESTINATION: ${{ matrix.env.destination }}
+      - uses: actions/checkout@v2
+      - name: iOS - ${{ matrix.destination }}
+        run: set -o pipefail && xcodebuild clean build test -project "Scope.xcodeproj" -scheme "Scope iOS" -destination "${{ matrix.destination }}" | xcpretty
+  tvOS:
+    name: Test tvOS
+    runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ["OS=13.3,name=Apple TV 4K"]
+    steps:
+      - uses: actions/checkout@v2
+      - name: tvOS - ${{ matrix.destination }}
+        run: set -o pipefail && xcodebuild clean build test -project "Scope.xcodeproj" -scheme "Scope tvOS" -destination "${{ matrix.destination }}" | xcpretty
+  watchOS:
+    name: Build watchOS
+    runs-on: macOS-latest
+    strategy:
+      matrix:
+        destination: ["OS=6.1.1,name=Apple Watch Series 5 - 44mm"]
+    steps:
+      - uses: actions/checkout@v2
+      - name: watchOS - ${{ matrix.destination }}
+        run: set -o pipefail && xcodebuild clean build -project "Scope.xcodeproj" -scheme "Scope watchOS" -destination "${{ matrix.destination }}" | xcpretty
+  spm:
+    name: Test with SPM
+    runs-on: macOS-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: SPM Test
+        run: swift test -c debug

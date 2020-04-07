@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Copyright © 2018 Kim Heebeom. All rights reserved.
+//  Copyright © 2018 Esther. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -20,27 +20,19 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-import Foundation
+///  `with`
+///
+///  let description = with(org) {
+///    "Orgnaization name is \($0.name), "
+///      .appending("member name is \($0.member.name)")
+///  }
+///  print(description)
+@discardableResult
+public func with<T, R>(_ receiver: T, _ block: ((T) -> R)) -> R {
+  block(receiver)
+}
 
 @discardableResult
-public func run<T>(_ block: (() -> T)) -> T {
-  return block()
+public func with<T, R>(_ receiver: inout T, _ block: ((inout T) -> R)) -> R {
+  block(&receiver)
 }
-
-public protocol Run {}
-public extension Run where Self: Any {
-
-  ///  `run`
-  ///
-  ///  let org = run { () -> Organazation in
-  ///    someFunc1()
-  ///    someFunc2()
-  ///    return Organazation(name: "podo")
-  ///  }
-  @discardableResult
-  func run<T>(_ block: (() -> T)) -> T {
-    return block()
-  }
-}
-
-extension NSObject: Run {}

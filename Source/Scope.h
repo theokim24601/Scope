@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Copyright © 2018 Kim Heebeom. All rights reserved.
+//  Copyright © 2018 Esther. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -20,18 +20,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-///  `with`
-///
-///  with(organization.member) {
-///    $0.name = "podo"
-///    $0.role = .owner
-///  }
-@discardableResult
-public func with<T, R>(_ receiver: T, _ block: ((T) -> R)) -> R {
-  block(receiver)
-}
+@import Foundation;
 
-@discardableResult
-public func with<T, R>(_ receiver: inout T, _ block: ((inout T) -> R)) -> R {
-  block(&receiver)
-}
+FOUNDATION_EXPORT double ScopeVersionNumber;
+FOUNDATION_EXPORT const unsigned char ScopeVersionString[];
