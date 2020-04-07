@@ -11,15 +11,10 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        env:
-          - sdk: iphonesimulator12.2
-            destination: platform=iOS Simulator,name=iPhone XS,OS=12.2
-
-          - sdk: macosx10.14
-            destination: arch=x86_64
-
-          - sdk: appletvsimulator12.2
-            destination: OS=12.2,name=Apple TV
+        destination: [
+            'platform=iOS Simulator,OS=12.2,name=iPhone XS',
+            'platform=tvOS Simulator,OS=12.2,name=Apple TV 4K'
+        ]
 
     steps:
     - uses: actions/checkout@v1
@@ -27,15 +22,11 @@ jobs:
     - name: Build and Test
       run: |
         set -o pipefail && xcodebuild clean build test \
-          -project "$PROJECT" \
-          -scheme "$SCHEME" \
-          -sdk "$SDK" \
-          -destination "$DESTINATION" \
-          -configuration Debug \
-          -enableCodeCoverage YES \
+          -project "$project" \
+          -scheme "$scheme" \
+          -destination "$destination" \
           CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO | xcpretty -c;
       env:
-        PROJECT: Scope.xcodeproj
-        SCHEME: Scope
-        SDK: ${{ matrix.env.sdk }}
-        DESTINATION: ${{ matrix.env.destination }}
+        project: Scope.xcodeproj
+        scheme: Scope
+        destination: ${{ matrix.destination }}
