@@ -9,111 +9,107 @@
 import XCTest
 @testable import Scope
 
-class Organazation: Let, Also, Apply {
-    var name: String
-    var member: Member?
+class Organization: Let, Also, Apply {
+  var name: String
+  var member: Member?
 
-    init(name: String = "default", member: Member? = nil) {
-        self.name = name
-        self.member = member
-    }
+  init(name: String = "default", member: Member? = nil) {
+    self.name = name
+    self.member = member
+  }
+
+  func addMember(_ member: Member) {
+    self.member = member
+  }
 }
 
 class Member: Let {
-    var name: String
-    var role: Role?
+  var name: String
+  var role: Role?
 
-    init(name: String = "user", role: Role? = nil) {
-        self.name = name
-        self.role = role
-    }
+  init(name: String = "user", role: Role? = nil) {
+    self.name = name
+    self.role = role
+  }
 }
 
 enum Role {
-    case owner
-    case member
+  case owner
+  case member
 }
 
-func someFunc1(){}
-func someFunc2(){}
-func someFunc3(){}
+class Regex {
+
+  init(_ a: String = "asd") {
+
+  }
+}
 
 class ScopeTests: XCTestCase {
 
-    func testAlso() {
-        let org = Organazation().also {
-            $0.name = "podo"
-            $0.member = Member(name: "hb1love", role: .owner)
-        }
-
-        XCTAssertTrue(org.name == "podo")
-        XCTAssertTrue(org.member?.name == "hb1love")
+  func testApply() {
+    let org = Organization().apply {
+      $0.name = "podo"
+      $0.member = Member(name: "esther", role: .owner)
     }
 
-    func testApply() {
-        let org = Organazation().apply {
-            someFunc1()
-        }
+    XCTAssertEqual(org.name, "podo")
+    XCTAssertEqual(org.member?.name, "esther")
+  }
 
-        XCTAssertTrue(org.name == "default")
-        XCTAssertTrue(org.member == nil)
+  func testAlso() {
+    let member = Member(name: "esther", role: .owner)
+    let org = Organization()
+
+    org.also { print("new member") }
+      .addMember(member)
+
+    XCTAssertEqual(org.member?.name, "esther")
+  }
+
+  func testLet() {
+    var org: Organization?
+    org = Organization(name: "podo", member: Member(name: "esther", role: .member))
+
+    org?.member?.let {
+      $0.role = .owner
     }
 
-    func testLet() {
-        let org = Organazation(name: "podo", member: Member(name: "hb1love", role: .owner))
+    XCTAssertEqual(org?.member?.role, .owner)
 
-        org.member?.let {
-            $0.name = "heebeom"
-        }
-
-        XCTAssertTrue(org.member?.name == "heebeom")
-
-        let member = org.let { org -> Member? in
-            org.name = "new podo"
-            return org.member
-        }
-
-        XCTAssertTrue(org.name == "new podo")
-        XCTAssertTrue(member?.name == "heebeom")
+    let member = org?.let { org -> Member? in
+      org.name = "new podo"
+      return org.member
     }
 
-    func testrun() {
-        let org = run { () -> Organazation in
-            someFunc1()
-            someFunc2()
-            someFunc3()
-            return Organazation(name: "podo")
-        }
+    XCTAssertEqual(org?.name, "new podo")
+    XCTAssertEqual(member?.name, "esther")
+  }
 
-        XCTAssertTrue(org.name == "podo")
-        XCTAssertTrue(org.member == nil)
+  func testWith() {
+    let org = Organization()
+    org.member = Member()
+
+    let description = with(org) {
+      "Orgnaization name is \($0.name), "
+        .appending("member name is \($0.member!.name)")
     }
 
-    func testWith() {
-        let org = Organazation()
+    XCTAssertEqual(description, "Orgnaization name is default, member name is user")
+  }
 
-        with(org) {
-            $0.name = "podo"
-            $0.member = Member(name: "hb1love")
+  func testWith_optional() {
+    let org = Organization()
 
-            with($0.member) {
-                $0?.name = "heebeom"
-            }
-        }
-
-        XCTAssertTrue(org.name == "podo")
-        XCTAssertTrue(org.member?.name == "heebeom")
+    with(org.member) {
+      $0?.name = "Org!!"
+      $0?.role = .owner
     }
 
-    func testWith_optional() {
-        let org = Organazation()
-
-        with(org.member) {
-            $0?.name = "Org!!"
-            $0?.role = .owner
-        }
-
-        XCTAssertTrue(org.name == "default")
-        XCTAssertTrue(org.member?.role == nil)
-    }
+    XCTAssertTrue(org.name == "default")
+    XCTAssertTrue(org.member?.role == nil)
+  }
 }
+
+
+

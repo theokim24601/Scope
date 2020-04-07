@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Copyright © 2018 Kim Heebeom. All rights reserved.
+//  Copyright © 2018 Esther. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -22,10 +22,11 @@
 
 ///  `with`
 ///
-///  with(organization.member) {
-///    $0.name = "podo"
-///    $0.role = .owner
+///  let description = with(org) {
+///    "Orgnaization name is \($0.name), "
+///      .appending("member name is \($0.member.name)")
 ///  }
+///  print(description)
 @discardableResult
 public func with<T, R>(_ receiver: T, _ block: ((T) -> R)) -> R {
   block(receiver)

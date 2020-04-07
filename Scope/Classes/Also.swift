@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Copyright © 2018 Kim Heebeom. All rights reserved.
+//  Copyright © 2018 Esther. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -27,15 +27,20 @@ public extension Also where Self: Any {
 
   ///  `also`
   ///
-  ///  let org = Organazation().also {
-  ///    $0.name = "podo"
-  ///    $0.member = Member(name: "hb1love", role: .owner)
-  ///  }
+  ///  let member = Member(name: "esther", role: .owner)
+  ///  let org = Organization()
+  ///
+  ///  org.also { print("new member") }
+  ///    .addMember(member)
   @discardableResult
-  func also(_ block: ((Self) -> Void)) -> Self {
-    block(self)
+  func also(_ block: (() -> Void)) -> Self {
+    block()
     return self
   }
 }
 
 extension NSObject: Also {}
+
+extension Array: Also {}
+extension Dictionary: Also {}
+extension Set: Also {}

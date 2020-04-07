@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Copyright © 2018 Kim Heebeom. All rights reserved.
+//  Copyright © 2018 Esther. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -28,7 +28,7 @@ public extension Let where Self: Any {
   ///  `let`
   ///
   ///  org.member?.let {
-  ///    $0.name = "hb1love"
+  ///    $0.name = "esther"
   ///    $0.role = .owner
   ///  }
   @discardableResult
@@ -38,3 +38,7 @@ public extension Let where Self: Any {
 }
 
 extension NSObject: Let {}
+
+extension Array: Let {}
+extension Dictionary: Let {}
+extension Set: Let {}

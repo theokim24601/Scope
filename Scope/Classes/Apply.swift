@@ -1,6 +1,6 @@
 //  MIT License
 //
-//  Copyright © 2018 Kim Heebeom. All rights reserved.
+//  Copyright © 2018 Esther. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy
 //  of this software and associated documentation files (the "Software"), to deal
@@ -27,15 +27,19 @@ public extension Apply where Self: Any {
 
   ///  `apply`
   ///
-  ///  let org = Organazation().apply {
-  ///    someFunc1()
-  ///    someFunc2()
+  ///  let org = Organization().apply {
+  ///    $0.name = "podo"
+  ///    $0.member = Member(name: "esther", role: .owner)
   ///  }
   @discardableResult
-  func apply(_ block: (() -> Void)) -> Self {
-    block()
+  func apply(_ block: ((Self) throws -> Void)) rethrows -> Self {
+    try block(self)
     return self
   }
 }
 
 extension NSObject: Apply {}
+
+extension Array: Apply {}
+extension Dictionary: Apply {}
+extension Set: Apply {}

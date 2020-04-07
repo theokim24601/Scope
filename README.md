@@ -4,99 +4,136 @@
 [![Platform](https://img.shields.io/cocoapods/p/Scope.svg?style=flat)](https://github.com/hb1love/Scope)
 ![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)
 [![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://cocoapods.org/pods/Scope)
-[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 🌷 Scoping Functions of Kotlin Style for Readable Code
 
 ## Usage
 
-**`also`**, **`with`**, **`let`**, **`run`**, **`apply`**
+**`apply`**, **`also`** , **`let`**, **`with`**, **`run`** 
 
+### Reture Value
 
-Initialize Instance with **`also`** in closure
+The scope functions differ by the result they return:
+
+- `also` return the context object.
+- `let`, `run`, and `with` return the closure result.
+
+The return value of `also`  and `apply` is the context object itself. so they can be included into call chains as side steps.
 
 ```swift
-let org = Organazation().also {
+let org = Organization()
+  .also { print("new podo org") }
+  .apply {
     $0.name = "podo"
-    $0.member = Member(name: "hb1love", role: .owner)
+    $0.member = Member(name: "Esther", role: .owner)
+  }
+```
+
+They also can be used in return statements of functions returning the context object.
+
+```swift
+func newPodoOrg() -> Organization {
+  Organization().apply {
+    $0.name = "podo"
+    $0.member = Member(name: "Esther", role: .owner)
+  }
 }
+```
+
+#### apply
+
+Use `apply` for code blocks that don't return a value and mainly operate on the members of the receiver object. 
+
+```swift
+let org = Organization().apply {
+  $0.name = "podo"
+  $0.member = Member(name: "esther", role: .owner)
+}
+print(org)
+```
+
+#### also
+
+Use `also` for additional actions that don't alter the object, such as logging or printing debug information.
+
+```swift
+let member = Member(name: "esther", role: .owner)
+let org = Organization()
+
+org.also { print("new member") }
+  .addMember(member)
 ``` 
 
-Similarly, we can be used like this. **`with`**
+#### let
+
+`let` can be used to invoke one or more functions on result of call chains.
 
 ```swift
-with(organization.member) {
-    $0.name = "podo"
-    $0.role = .owner
+let numbers = [1, 5, 10]
+numbers.map { $0 * 2 }
+  .filter { $0 > 3}
+  .let { $0.count }
+```
+
+`let` is often used for executing a code block only with non-nil values.
+
+```swift
+var org: Organization?
+org = Organization(name: "podo", member: Member(name: "esther", role: .member))
+
+org?.member?.let {
+  $0.role = .owner // $0 is not nil inside '?.let {}' 
 }
 ```
 
-Imagine if `organization.member` could be null, maybe it looks like this: Use **`let`** !
+#### with
+
+A non-extension function: the context object is passed as an argument, and return value is the closure result.
+
+`with` can be read as *"with this object, do the following."*
 
 ```swift
-// so bad..
-with(organization.member) {
-    $0?.name = "hb1love"
-    $0?.role = .owner
+let description = with(org) {
+  "Orgnaization name is \($0.name), "
+    .appending("member name is \($0.member.name)")
 }
-
-// Good!
-org.member?.let {
-    $0.name = "hb1love"
-    $0.role = .owner
-}
+print(description)
 ```
 
-it is fully enclosed within the **`run`** scope.
+#### run
+
+Use `run` as a non-extension function. Non-extension `run` lets you execute a block of several statements where an expression is required.
 
 ```swift
-var age = 17
-run {
-    var age = 27
-    print(age) // 27
-}
-print(age) // 17
-```
+let hexNumberRegex = run2 { () -> Regex in
+  let digits = "0-9"
+  let hexDigits = "A-Fa-f"
+  let sign = "+-"
 
-```swift
-let org = run { () -> Organazation in
-    someFunc1()
-    someFunc2()
-    someFunc3()
-    return Organazation(name: "podo")
+  return Regex("[\(sign)]?[\(digits)\(hexDigits)]+")
 }
 ```
-
-Use **`apply`**, when you need any logic after initialization
-
-```swift
-let org = Organazation().apply {
-    someFunc1()
-    someFunc2()
-}
-```
-
-**`apply`** has no parameters. It just returns an instance.
-
-## Requirements
-
-- iOS 8.0+
-- Xcode 11.3.1+
-- Swift 4.0+
 
 ## Installation
 
-- Using [CocoaPods](https://cocoapods.org)
+- **Using [Swift Package Manager](https://swift.org/package-manager/)**
 
-```ruby
-pod 'Scope'
-```
+  ```swift
+  import PackageDescription
 
-- Using [Carthage](https://github.com/Carthage/Carthage)
+  let package = Package(
+    name: "MyApp",
+    dependencies: [
+      .Package(url: "https://github.com/hb1love/Scope", majorVersion: 1),
+    ]
+  )
+  ```
 
-```
-github "hb1love/Scope"
-```
+- **Using [CocoaPods](https://cocoapods.org)**
+
+  ```ruby
+  pod 'Scope'
+  ```
 
 ## License
 
