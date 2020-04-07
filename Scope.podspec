@@ -6,11 +6,10 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { "Kim Heebeom" => "heebuma@gmail.com" }
   s.source           = { :git => "https://github.com/hb1love/Scope.git", :tag => s.version.to_s }
-  s.source_files     = 'Scope/Classes/**/*'
-  s.requires_arc     = true
-  
+  s.source_files     = 'Source/*.swift'
+
   s.ios.deployment_target = "8.0"
-  s.osx.deployment_target = "10.9"
+  s.osx.deployment_target = "10.10"
   s.tvos.deployment_target = "9.0"
   s.watchos.deployment_target = "2.0"
 end

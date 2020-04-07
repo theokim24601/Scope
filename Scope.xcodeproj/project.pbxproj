@@ -7,29 +7,71 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D18866D21AEF8CE009E4D87 /* Scope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D18866B21AEF8CE009E4D87 /* Scope.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2DD20D6A21B2DA5000572863 /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D6921B2DA5000572863 /* Run.swift */; };
-		2DD20D6C21B2DB1E00572863 /* Let.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D6B21B2DB1E00572863 /* Let.swift */; };
-		2DD20D6E21B2DB4E00572863 /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D6D21B2DB4E00572863 /* With.swift */; };
-		2DD20D7021B311F600572863 /* Also.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D6F21B311F600572863 /* Also.swift */; };
-		2DD20D7221B3128700572863 /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D7121B3128700572863 /* Apply.swift */; };
-		2DD20D7621B3E24600572863 /* Scope.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2DD20D7521B3E24600572863 /* Scope.podspec */; };
-		2DD20D7E21B3F7F600572863 /* ScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DD20D7D21B3F7F600572863 /* ScopeTests.swift */; };
+		2DE160B8243C54ED00B0BC7E /* Scope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE160AF243C54ED00B0BC7E /* Scope.framework */; };
+		2DE160D4243C551A00B0BC7E /* Scope.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DE160CB243C551A00B0BC7E /* Scope.framework */; };
+		2DE16108243C5ECF00B0BC7E /* Also.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16101243C5ECF00B0BC7E /* Also.swift */; };
+		2DE16109243C5ECF00B0BC7E /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16102243C5ECF00B0BC7E /* Apply.swift */; };
+		2DE1610A243C5ECF00B0BC7E /* Let.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16103243C5ECF00B0BC7E /* Let.swift */; };
+		2DE1610B243C5ECF00B0BC7E /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16104243C5ECF00B0BC7E /* With.swift */; };
+		2DE1610D243C5ECF00B0BC7E /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16106243C5ECF00B0BC7E /* Run.swift */; };
+		2DE1610F243C5EDC00B0BC7E /* Scope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE16105243C5ECF00B0BC7E /* Scope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DE16110243C5EF800B0BC7E /* Also.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16101243C5ECF00B0BC7E /* Also.swift */; };
+		2DE16111243C5EF900B0BC7E /* Also.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16101243C5ECF00B0BC7E /* Also.swift */; };
+		2DE16112243C5EF900B0BC7E /* Also.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16101243C5ECF00B0BC7E /* Also.swift */; };
+		2DE16113243C5EFC00B0BC7E /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16102243C5ECF00B0BC7E /* Apply.swift */; };
+		2DE16114243C5EFC00B0BC7E /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16102243C5ECF00B0BC7E /* Apply.swift */; };
+		2DE16115243C5EFD00B0BC7E /* Apply.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16102243C5ECF00B0BC7E /* Apply.swift */; };
+		2DE16116243C5EFF00B0BC7E /* Let.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16103243C5ECF00B0BC7E /* Let.swift */; };
+		2DE16118243C5F0100B0BC7E /* Let.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16103243C5ECF00B0BC7E /* Let.swift */; };
+		2DE16119243C5F0100B0BC7E /* Let.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16103243C5ECF00B0BC7E /* Let.swift */; };
+		2DE1611A243C5F0400B0BC7E /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16104243C5ECF00B0BC7E /* With.swift */; };
+		2DE1611B243C5F0500B0BC7E /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16104243C5ECF00B0BC7E /* With.swift */; };
+		2DE1611C243C5F0500B0BC7E /* With.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16104243C5ECF00B0BC7E /* With.swift */; };
+		2DE1611D243C5F0700B0BC7E /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16106243C5ECF00B0BC7E /* Run.swift */; };
+		2DE1611E243C5F0800B0BC7E /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16106243C5ECF00B0BC7E /* Run.swift */; };
+		2DE1611F243C5F0900B0BC7E /* Run.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16106243C5ECF00B0BC7E /* Run.swift */; };
+		2DE16123243C5F2600B0BC7E /* ScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16121243C5F1700B0BC7E /* ScopeTests.swift */; };
+		2DE16124243C5F2700B0BC7E /* ScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16121243C5F1700B0BC7E /* ScopeTests.swift */; };
+		2DE16125243C5F2800B0BC7E /* ScopeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE16121243C5F1700B0BC7E /* ScopeTests.swift */; };
+		2DE16126243C5FA300B0BC7E /* Scope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE16105243C5ECF00B0BC7E /* Scope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DE16127243C5FAE00B0BC7E /* Scope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE16105243C5ECF00B0BC7E /* Scope.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DE16128243C5FB600B0BC7E /* Scope.h in Headers */ = {isa = PBXBuildFile; fileRef = 2DE16105243C5ECF00B0BC7E /* Scope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DE160B9243C54ED00B0BC7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D18865F21AEF8CD009E4D87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE160AE243C54ED00B0BC7E;
+			remoteInfo = "Scope macOS";
+		};
+		2DE160D5243C551A00B0BC7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D18865F21AEF8CD009E4D87 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DE160CA243C551A00B0BC7E;
+			remoteInfo = "Scope tvOS";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2D18866821AEF8CD009E4D87 /* Scope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D18866B21AEF8CE009E4D87 /* Scope.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Scope.h; sourceTree = "<group>"; };
-		2D18866C21AEF8CE009E4D87 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2DD20D6921B2DA5000572863 /* Run.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
-		2DD20D6B21B2DB1E00572863 /* Let.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Let.swift; sourceTree = "<group>"; };
-		2DD20D6D21B2DB4E00572863 /* With.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
-		2DD20D6F21B311F600572863 /* Also.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Also.swift; sourceTree = "<group>"; };
-		2DD20D7121B3128700572863 /* Apply.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
-		2DD20D7521B3E24600572863 /* Scope.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Scope.podspec; sourceTree = SOURCE_ROOT; };
-		2DD20D7B21B3F7F600572863 /* ScopeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScopeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2DD20D7D21B3F7F600572863 /* ScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeTests.swift; sourceTree = "<group>"; };
-		2DD20D7F21B3F7F600572863 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DD20D7B21B3F7F600572863 /* Scope iOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scope iOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE160AF243C54ED00B0BC7E /* Scope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE160B7243C54ED00B0BC7E /* Scope macOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scope macOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE160CB243C551A00B0BC7E /* Scope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE160D3243C551A00B0BC7E /* Scope tvOS Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Scope tvOS Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE160E7243C553100B0BC7E /* Scope.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Scope.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DE16101243C5ECF00B0BC7E /* Also.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Also.swift; sourceTree = "<group>"; };
+		2DE16102243C5ECF00B0BC7E /* Apply.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Apply.swift; sourceTree = "<group>"; };
+		2DE16103243C5ECF00B0BC7E /* Let.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Let.swift; sourceTree = "<group>"; };
+		2DE16104243C5ECF00B0BC7E /* With.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = With.swift; sourceTree = "<group>"; };
+		2DE16105243C5ECF00B0BC7E /* Scope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scope.h; sourceTree = "<group>"; };
+		2DE16106243C5ECF00B0BC7E /* Run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Run.swift; sourceTree = "<group>"; };
+		2DE16107243C5ECF00B0BC7E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DE16121243C5F1700B0BC7E /* ScopeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScopeTests.swift; sourceTree = "<group>"; };
+		2DE16122243C5F1700B0BC7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,14 +89,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DE160AC243C54ED00B0BC7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160B4243C54ED00B0BC7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE160B8243C54ED00B0BC7E /* Scope.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160C8243C551A00B0BC7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160D0243C551A00B0BC7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE160D4243C551A00B0BC7E /* Scope.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160E4243C553100B0BC7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2D18865E21AEF8CD009E4D87 = {
 			isa = PBXGroup;
 			children = (
-				2D18866A21AEF8CD009E4D87 /* Scope */,
-				2DD20D7C21B3F7F600572863 /* ScopeTests */,
+				2DE16100243C5ECF00B0BC7E /* Source */,
+				2DE16120243C5F1700B0BC7E /* Tests */,
 				2D18866921AEF8CD009E4D87 /* Products */,
 			);
 			indentWidth = 2;
@@ -65,49 +144,37 @@
 			isa = PBXGroup;
 			children = (
 				2D18866821AEF8CD009E4D87 /* Scope.framework */,
-				2DD20D7B21B3F7F600572863 /* ScopeTests.xctest */,
+				2DD20D7B21B3F7F600572863 /* Scope iOS Tests.xctest */,
+				2DE160AF243C54ED00B0BC7E /* Scope.framework */,
+				2DE160B7243C54ED00B0BC7E /* Scope macOS Tests.xctest */,
+				2DE160CB243C551A00B0BC7E /* Scope.framework */,
+				2DE160D3243C551A00B0BC7E /* Scope tvOS Tests.xctest */,
+				2DE160E7243C553100B0BC7E /* Scope.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D18866A21AEF8CD009E4D87 /* Scope */ = {
+		2DE16100243C5ECF00B0BC7E /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2D18868921AEF966009E4D87 /* Classes */,
-				2D18868A21AEF96C009E4D87 /* Supporting Files */,
+				2DE16101243C5ECF00B0BC7E /* Also.swift */,
+				2DE16102243C5ECF00B0BC7E /* Apply.swift */,
+				2DE16103243C5ECF00B0BC7E /* Let.swift */,
+				2DE16104243C5ECF00B0BC7E /* With.swift */,
+				2DE16105243C5ECF00B0BC7E /* Scope.h */,
+				2DE16106243C5ECF00B0BC7E /* Run.swift */,
+				2DE16107243C5ECF00B0BC7E /* Info.plist */,
 			);
-			path = Scope;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		2D18868921AEF966009E4D87 /* Classes */ = {
+		2DE16120243C5F1700B0BC7E /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				2DD20D6F21B311F600572863 /* Also.swift */,
-				2DD20D7121B3128700572863 /* Apply.swift */,
-				2DD20D6B21B2DB1E00572863 /* Let.swift */,
-				2DD20D6921B2DA5000572863 /* Run.swift */,
-				2DD20D6D21B2DB4E00572863 /* With.swift */,
+				2DE16121243C5F1700B0BC7E /* ScopeTests.swift */,
+				2DE16122243C5F1700B0BC7E /* Info.plist */,
 			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		2D18868A21AEF96C009E4D87 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2DD20D7521B3E24600572863 /* Scope.podspec */,
-				2D18866B21AEF8CE009E4D87 /* Scope.h */,
-				2D18866C21AEF8CE009E4D87 /* Info.plist */,
-			);
-			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2DD20D7C21B3F7F600572863 /* ScopeTests */ = {
-			isa = PBXGroup;
-			children = (
-				2DD20D7D21B3F7F600572863 /* ScopeTests.swift */,
-				2DD20D7F21B3F7F600572863 /* Info.plist */,
-			);
-			path = ScopeTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,16 +184,40 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D18866D21AEF8CE009E4D87 /* Scope.h in Headers */,
+				2DE1610F243C5EDC00B0BC7E /* Scope.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160AA243C54ED00B0BC7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE16126243C5FA300B0BC7E /* Scope.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160C6243C551A00B0BC7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE16127243C5FAE00B0BC7E /* Scope.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160E2243C553100B0BC7E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE16128243C5FB600B0BC7E /* Scope.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2D18866721AEF8CD009E4D87 /* Scope */ = {
+		2D18866721AEF8CD009E4D87 /* Scope iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D18867021AEF8CE009E4D87 /* Build configuration list for PBXNativeTarget "Scope" */;
+			buildConfigurationList = 2D18867021AEF8CE009E4D87 /* Build configuration list for PBXNativeTarget "Scope iOS" */;
 			buildPhases = (
 				2D18866321AEF8CD009E4D87 /* Headers */,
 				2D18866421AEF8CD009E4D87 /* Sources */,
@@ -137,14 +228,14 @@
 			);
 			dependencies = (
 			);
-			name = Scope;
+			name = "Scope iOS";
 			productName = Scope;
 			productReference = 2D18866821AEF8CD009E4D87 /* Scope.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		2DD20D7A21B3F7F600572863 /* ScopeTests */ = {
+		2DD20D7A21B3F7F600572863 /* Scope iOS Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2DD20D8021B3F7F600572863 /* Build configuration list for PBXNativeTarget "ScopeTests" */;
+			buildConfigurationList = 2DD20D8021B3F7F600572863 /* Build configuration list for PBXNativeTarget "Scope iOS Tests" */;
 			buildPhases = (
 				2DD20D7721B3F7F600572863 /* Sources */,
 				2DD20D7821B3F7F600572863 /* Frameworks */,
@@ -154,10 +245,100 @@
 			);
 			dependencies = (
 			);
-			name = ScopeTests;
+			name = "Scope iOS Tests";
 			productName = ScopeTests;
-			productReference = 2DD20D7B21B3F7F600572863 /* ScopeTests.xctest */;
+			productReference = 2DD20D7B21B3F7F600572863 /* Scope iOS Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DE160AE243C54ED00B0BC7E /* Scope macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE160C0243C54ED00B0BC7E /* Build configuration list for PBXNativeTarget "Scope macOS" */;
+			buildPhases = (
+				2DE160AA243C54ED00B0BC7E /* Headers */,
+				2DE160AB243C54ED00B0BC7E /* Sources */,
+				2DE160AC243C54ED00B0BC7E /* Frameworks */,
+				2DE160AD243C54ED00B0BC7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scope macOS";
+			productName = "Scope macOS";
+			productReference = 2DE160AF243C54ED00B0BC7E /* Scope.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2DE160B6243C54ED00B0BC7E /* Scope macOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE160C3243C54ED00B0BC7E /* Build configuration list for PBXNativeTarget "Scope macOS Tests" */;
+			buildPhases = (
+				2DE160B3243C54ED00B0BC7E /* Sources */,
+				2DE160B4243C54ED00B0BC7E /* Frameworks */,
+				2DE160B5243C54ED00B0BC7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DE160BA243C54ED00B0BC7E /* PBXTargetDependency */,
+			);
+			name = "Scope macOS Tests";
+			productName = "Scope macOSTests";
+			productReference = 2DE160B7243C54ED00B0BC7E /* Scope macOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DE160CA243C551A00B0BC7E /* Scope tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE160DC243C551B00B0BC7E /* Build configuration list for PBXNativeTarget "Scope tvOS" */;
+			buildPhases = (
+				2DE160C6243C551A00B0BC7E /* Headers */,
+				2DE160C7243C551A00B0BC7E /* Sources */,
+				2DE160C8243C551A00B0BC7E /* Frameworks */,
+				2DE160C9243C551A00B0BC7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scope tvOS";
+			productName = "Scope tvOS";
+			productReference = 2DE160CB243C551A00B0BC7E /* Scope.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2DE160D2243C551A00B0BC7E /* Scope tvOS Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE160DF243C551B00B0BC7E /* Build configuration list for PBXNativeTarget "Scope tvOS Tests" */;
+			buildPhases = (
+				2DE160CF243C551A00B0BC7E /* Sources */,
+				2DE160D0243C551A00B0BC7E /* Frameworks */,
+				2DE160D1243C551A00B0BC7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DE160D6243C551A00B0BC7E /* PBXTargetDependency */,
+			);
+			name = "Scope tvOS Tests";
+			productName = "Scope tvOSTests";
+			productReference = 2DE160D3243C551A00B0BC7E /* Scope tvOS Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DE160E6243C553100B0BC7E /* Scope watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DE160EC243C553100B0BC7E /* Build configuration list for PBXNativeTarget "Scope watchOS" */;
+			buildPhases = (
+				2DE160E2243C553100B0BC7E /* Headers */,
+				2DE160E3243C553100B0BC7E /* Sources */,
+				2DE160E4243C553100B0BC7E /* Frameworks */,
+				2DE160E5243C553100B0BC7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Scope watchOS";
+			productName = "Scope watchOS";
+			productReference = 2DE160E7243C553100B0BC7E /* Scope.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -165,7 +346,7 @@
 		2D18865F21AEF8CD009E4D87 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = happytiger;
 				TargetAttributes = {
@@ -175,6 +356,21 @@
 					};
 					2DD20D7A21B3F7F600572863 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					2DE160AE243C54ED00B0BC7E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					2DE160B6243C54ED00B0BC7E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					2DE160CA243C551A00B0BC7E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					2DE160D2243C551A00B0BC7E = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					2DE160E6243C553100B0BC7E = {
+						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
@@ -191,8 +387,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D18866721AEF8CD009E4D87 /* Scope */,
-				2DD20D7A21B3F7F600572863 /* ScopeTests */,
+				2D18866721AEF8CD009E4D87 /* Scope iOS */,
+				2DD20D7A21B3F7F600572863 /* Scope iOS Tests */,
+				2DE160AE243C54ED00B0BC7E /* Scope macOS */,
+				2DE160B6243C54ED00B0BC7E /* Scope macOS Tests */,
+				2DE160CA243C551A00B0BC7E /* Scope tvOS */,
+				2DE160D2243C551A00B0BC7E /* Scope tvOS Tests */,
+				2DE160E6243C553100B0BC7E /* Scope watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -202,11 +403,45 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DD20D7621B3E24600572863 /* Scope.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		2DD20D7921B3F7F600572863 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160AD243C54ED00B0BC7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160B5243C54ED00B0BC7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160C9243C551A00B0BC7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160D1243C551A00B0BC7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160E5243C553100B0BC7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -220,11 +455,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DD20D7021B311F600572863 /* Also.swift in Sources */,
-				2DD20D6C21B2DB1E00572863 /* Let.swift in Sources */,
-				2DD20D6E21B2DB4E00572863 /* With.swift in Sources */,
-				2DD20D7221B3128700572863 /* Apply.swift in Sources */,
-				2DD20D6A21B2DA5000572863 /* Run.swift in Sources */,
+				2DE1610A243C5ECF00B0BC7E /* Let.swift in Sources */,
+				2DE1610B243C5ECF00B0BC7E /* With.swift in Sources */,
+				2DE16109243C5ECF00B0BC7E /* Apply.swift in Sources */,
+				2DE1610D243C5ECF00B0BC7E /* Run.swift in Sources */,
+				2DE16108243C5ECF00B0BC7E /* Also.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,11 +467,76 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DD20D7E21B3F7F600572863 /* ScopeTests.swift in Sources */,
+				2DE16123243C5F2600B0BC7E /* ScopeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160AB243C54ED00B0BC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE16116243C5EFF00B0BC7E /* Let.swift in Sources */,
+				2DE1611A243C5F0400B0BC7E /* With.swift in Sources */,
+				2DE16113243C5EFC00B0BC7E /* Apply.swift in Sources */,
+				2DE1611D243C5F0700B0BC7E /* Run.swift in Sources */,
+				2DE16110243C5EF800B0BC7E /* Also.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160B3243C54ED00B0BC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE16124243C5F2700B0BC7E /* ScopeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160C7243C551A00B0BC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE16118243C5F0100B0BC7E /* Let.swift in Sources */,
+				2DE1611B243C5F0500B0BC7E /* With.swift in Sources */,
+				2DE16114243C5EFC00B0BC7E /* Apply.swift in Sources */,
+				2DE1611E243C5F0800B0BC7E /* Run.swift in Sources */,
+				2DE16111243C5EF900B0BC7E /* Also.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160CF243C551A00B0BC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE16125243C5F2800B0BC7E /* ScopeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DE160E3243C553100B0BC7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DE16119243C5F0100B0BC7E /* Let.swift in Sources */,
+				2DE1611C243C5F0500B0BC7E /* With.swift in Sources */,
+				2DE16115243C5EFD00B0BC7E /* Apply.swift in Sources */,
+				2DE1611F243C5F0900B0BC7E /* Run.swift in Sources */,
+				2DE16112243C5EF900B0BC7E /* Also.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DE160BA243C54ED00B0BC7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE160AE243C54ED00B0BC7E /* Scope macOS */;
+			targetProxy = 2DE160B9243C54ED00B0BC7E /* PBXContainerItemProxy */;
+		};
+		2DE160D6243C551A00B0BC7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DE160CA243C551A00B0BC7E /* Scope tvOS */;
+			targetProxy = 2DE160D5243C551A00B0BC7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		2D18866E21AEF8CE009E4D87 /* Debug */ = {
@@ -366,6 +666,7 @@
 		2D18867121AEF8CE009E4D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -374,7 +675,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Scope/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -383,8 +684,8 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happytiger.scope;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scope;
+				PRODUCT_NAME = Scope;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -395,6 +696,7 @@
 		2D18867221AEF8CE009E4D87 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -403,7 +705,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "$(SRCROOT)/Scope/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Source/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -412,8 +714,8 @@
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.2.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.happytiger.scope;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scope;
+				PRODUCT_NAME = Scope;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -425,14 +727,14 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KW522KWZF;
-				INFOPLIST_FILE = ScopeTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.happytiger.ScopeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scopetests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,17 +746,271 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7KW522KWZF;
-				INFOPLIST_FILE = ScopeTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.happytiger.ScopeTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scopetests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2DE160C1243C54ED00B0BC7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scope;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Scope;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2DE160C2243C54ED00B0BC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scope;
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = Scope;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2DE160C4243C54ED00B0BC7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esther.Scope-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2DE160C5243C54ED00B0BC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esther.Scope-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2DE160DD243C551B00B0BC7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scope;
+				PRODUCT_NAME = Scope;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Debug;
+		};
+		2DE160DE243C551B00B0BC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scope;
+				PRODUCT_NAME = Scope;
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.0;
+			};
+			name = Release;
+		};
+		2DE160E0243C551B00B0BC7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esther.Scope-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Debug;
+		};
+		2DE160E1243C551B00B0BC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esther.Scope-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.4;
+			};
+			name = Release;
+		};
+		2DE160ED243C553100B0BC7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scope.watchOS;
+				PRODUCT_NAME = Scope;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		2DE160EE243C553100B0BC7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7KW522KWZF;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esther.scope.watchOS;
+				PRODUCT_NAME = Scope;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
 		};
@@ -470,7 +1026,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D18867021AEF8CE009E4D87 /* Build configuration list for PBXNativeTarget "Scope" */ = {
+		2D18867021AEF8CE009E4D87 /* Build configuration list for PBXNativeTarget "Scope iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D18867121AEF8CE009E4D87 /* Debug */,
@@ -479,11 +1035,56 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2DD20D8021B3F7F600572863 /* Build configuration list for PBXNativeTarget "ScopeTests" */ = {
+		2DD20D8021B3F7F600572863 /* Build configuration list for PBXNativeTarget "Scope iOS Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2DD20D8121B3F7F600572863 /* Debug */,
 				2DD20D8221B3F7F600572863 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE160C0243C54ED00B0BC7E /* Build configuration list for PBXNativeTarget "Scope macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE160C1243C54ED00B0BC7E /* Debug */,
+				2DE160C2243C54ED00B0BC7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE160C3243C54ED00B0BC7E /* Build configuration list for PBXNativeTarget "Scope macOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE160C4243C54ED00B0BC7E /* Debug */,
+				2DE160C5243C54ED00B0BC7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE160DC243C551B00B0BC7E /* Build configuration list for PBXNativeTarget "Scope tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE160DD243C551B00B0BC7E /* Debug */,
+				2DE160DE243C551B00B0BC7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE160DF243C551B00B0BC7E /* Build configuration list for PBXNativeTarget "Scope tvOS Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE160E0243C551B00B0BC7E /* Debug */,
+				2DE160E1243C551B00B0BC7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DE160EC243C553100B0BC7E /* Build configuration list for PBXNativeTarget "Scope watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DE160ED243C553100B0BC7E /* Debug */,
+				2DE160EE243C553100B0BC7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D18866721AEF8CD009E4D87"
-               BuildableName = "Scope.framework"
-               BlueprintName = "Scope"
+               BuildableName = "Scope_iOS.framework"
+               BlueprintName = "Scope iOS"
                ReferencedContainer = "container:Scope.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -27,29 +27,27 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "2D18866721AEF8CD009E4D87"
+            BuildableName = "Scope_iOS.framework"
+            BlueprintName = "Scope iOS"
+            ReferencedContainer = "container:Scope.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2DD20D7A21B3F7F600572863"
-               BuildableName = "ScopeTests.xctest"
-               BlueprintName = "ScopeTests"
+               BuildableName = "Scope iOS Tests.xctest"
+               BlueprintName = "Scope iOS Tests"
                ReferencedContainer = "container:Scope.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "2D18866721AEF8CD009E4D87"
-            BuildableName = "Scope.framework"
-            BlueprintName = "Scope"
-            ReferencedContainer = "container:Scope.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -65,13 +63,11 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D18866721AEF8CD009E4D87"
-            BuildableName = "Scope.framework"
-            BlueprintName = "Scope"
+            BuildableName = "Scope_iOS.framework"
+            BlueprintName = "Scope iOS"
             ReferencedContainer = "container:Scope.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -83,8 +79,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D18866721AEF8CD009E4D87"
-            BuildableName = "Scope.framework"
-            BlueprintName = "Scope"
+            BuildableName = "Scope_iOS.framework"
+            BlueprintName = "Scope iOS"
             ReferencedContainer = "container:Scope.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

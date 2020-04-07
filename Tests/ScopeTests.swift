@@ -38,13 +38,6 @@ enum Role {
   case member
 }
 
-class Regex {
-
-  init(_ a: String = "asd") {
-
-  }
-}
-
 class ScopeTests: XCTestCase {
 
   func testApply() {

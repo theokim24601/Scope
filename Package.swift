@@ -5,7 +5,10 @@ import PackageDescription
 let package = Package(
   name: "Scope",
   platforms: [
-    .macOS(.v10_10), .iOS(.v8), .tvOS(.v9), .watchOS(.v2)
+    .macOS(.v10_10),
+    .iOS(.v8),
+    .tvOS(.v9),
+    .watchOS(.v2)
   ],
   products: [
     .library(name: "Scope", targets: ["Scope"]),
@@ -14,10 +17,12 @@ let package = Package(
   targets: [
     .target(
       name: "Scope",
-      path: "Scope/Classes",
-      exclude: [
-        "Scope.h",
-      ]
+      path: "Source"
+    ),
+    .testTarget(
+      name: "ScopeTests",
+      dependencies: ["Scope"],
+      path: "Tests"
     )
   ],
   swiftLanguageVersions: [.v5]
