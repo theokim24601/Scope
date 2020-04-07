@@ -1,7 +1,7 @@
 # Scope
 
-[![Build Status](https://github.com/Alamofire/Alamofire/workflows/Alamofire%20CI/badge.svg?branch=master)](https://github.com/Alamofire/Alamofire/actions)
-[![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://cocoapods.org/pods/Scope)
+[![Build Status](https://github.com/hb1love/Scope/workflows/CI/badge.svg?branch=master)](https://github.com/hb1love/Scope/actions)
+[![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://github.com/hb1love/Scope)
 [![Platform](https://img.shields.io/cocoapods/p/Scope.svg?style=flat)](https://github.com/hb1love/Scope)
 ![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg)
 
