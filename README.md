@@ -1,8 +1,8 @@
 # Scope
 
-[![Build Status](https://travis-ci.org/hb1love/Scope.svg?branch=master)](https://travis-ci.org/hb1love/Scope)
 [![Platform](https://img.shields.io/cocoapods/p/Scope.svg?style=flat)](https://github.com/hb1love/Scope)
 ![Swift](https://img.shields.io/badge/Swift-5.1-orange.svg)
+[![Build Status](https://travis-ci.org/hb1love/Scope.svg?branch=master)](https://travis-ci.org/hb1love/Scope)
 [![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://cocoapods.org/pods/Scope)
 
 🌷 Scoping Functions of Kotlin Style for Readable Code
@@ -15,8 +15,8 @@
 
 The scope functions differ by the result they return:
 
-- `also` return the context object.
-- `let`, `run`, and `with` return the closure result.
+- `apply`, `also` return the context object.
+- `let`, `with`, and `run` return the closure result.
 
 The return value of `also`  and `apply` is the context object itself. so they can be included into call chains as side steps.
 
@@ -40,7 +40,7 @@ func newPodoOrg() -> Organization {
 }
 ```
 
-#### apply
+### apply
 
 Use `apply` for code blocks that don't return a value and mainly operate on the members of the receiver object. 
 
@@ -52,7 +52,7 @@ let org = Organization().apply {
 print(org)
 ```
 
-#### also
+### also
 
 Use `also` for additional actions that don't alter the object, such as logging or printing debug information.
 
@@ -64,7 +64,7 @@ org.also { print("new member") }
   .addMember(member)
 ``` 
 
-#### let
+### let
 
 `let` can be used to invoke one or more functions on result of call chains.
 
@@ -86,7 +86,7 @@ org?.member?.let {
 }
 ```
 
-#### with
+### with
 
 A non-extension function: the context object is passed as an argument, and return value is the closure result.
 
@@ -100,9 +100,10 @@ let description = with(org) {
 print(description)
 ```
 
-#### run
+### run
 
-Use `run` as a non-extension function. Non-extension `run` lets you execute a block of several statements where an expression is required.
+Use `run` as a non-extension function. 
+Non-extension `run` lets you execute a block of several statements where an expression is required.
 
 ```swift
 let hexNumberRegex = run2 { () -> Regex in
