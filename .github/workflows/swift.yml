@@ -29,7 +29,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        destination: ["OS=13.4,name=iPhone 11 Pro"]
+        destination: ["OS=13.3,name=iPhone 11 Pro"]
     steps:
       - uses: actions/checkout@v2
       - name: iOS - ${{ matrix.destination }}
@@ -39,7 +39,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        destination: ["OS=13.4,name=Apple TV 4K"]
+        destination: ["OS=13.3,name=Apple TV 4K"]
     steps:
       - uses: actions/checkout@v2
       - name: tvOS - ${{ matrix.destination }}
@@ -49,7 +49,7 @@ jobs:
     runs-on: macOS-latest
     strategy:
       matrix:
-        destination: ["OS=6.2,name=Apple Watch Series 5 - 44mm"]
+        destination: ["OS=6.1.1,name=Apple Watch Series 5 - 44mm"]
     steps:
       - uses: actions/checkout@v2
       - name: watchOS - ${{ matrix.destination }}
