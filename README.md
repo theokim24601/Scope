@@ -125,7 +125,7 @@ let hexNumberRegex = run2 { () -> Regex in
   let package = Package(
     name: "MyApp",
     dependencies: [
-      .Package(url: "https://github.com/hb1love/Scope", majorVersion: 1),
+      .Package(url: "https://github.com/hb1love/Scope", majorVersion: 2),
     ]
   )
   ```
