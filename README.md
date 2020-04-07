@@ -1,13 +1,15 @@
 # Scope
 
-[![Build Status](https://github.com/hb1love/Scope/workflows/CI/badge.svg?branch=master)](https://github.com/hb1love/Scope/actions)
-[![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://github.com/hb1love/Scope)
+[![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg)](https://swift.org)
 [![Platform](https://img.shields.io/cocoapods/p/Scope.svg?style=flat)](https://github.com/hb1love/Scope)
-![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg)
+[![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://github.com/hb1love/Scope)
+[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager)
+[![Build Status](https://github.com/hb1love/Scope/workflows/CI/badge.svg?branch=master)](https://github.com/hb1love/Scope/actions)
+[![License](https://img.shields.io/github/license/hb1love/Scope)](LICENSE)
 
-🌷 Scoping Functions of Kotlin Style for Readable Code
+Scoping Functions of Swift Style for Readable Code
 
-## Usage
+## 🌷 Usage
 
 **`apply`**, **`also`** , **`let`**, **`with`**, **`run`** 
 
@@ -115,7 +117,7 @@ let hexNumberRegex = run2 { () -> Regex in
 }
 ```
 
-## Installation
+## ⚙️ Installation
 
 - **Using [Swift Package Manager](https://swift.org/package-manager/)**
 
@@ -136,6 +138,6 @@ let hexNumberRegex = run2 { () -> Regex in
   pod 'Scope'
   ```
 
-## License
+## 👮‍ License
 
 **Scope** is available under the MIT license. See the [LICENSE](LICENSE) for details.
