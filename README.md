@@ -108,7 +108,7 @@ Use `run` as a non-extension function.
 Non-extension `run` lets you execute a block of several statements where an expression is required.
 
 ```swift
-let hexNumberRegex = run2 { () -> Regex in
+let hexNumberRegex = run { () -> Regex in
   let digits = "0-9"
   let hexDigits = "A-Fa-f"
   let sign = "+-"
@@ -127,7 +127,7 @@ let hexNumberRegex = run2 { () -> Regex in
   let package = Package(
     name: "MyApp",
     dependencies: [
-      .package(url: "https://github.com/hb1love/Scope", .upToNextMajor(from: "2.0.0"))
+      .package(url: "https://github.com/hb1love/Scope", .upToNextMajor(from: "2.1.0"))
     ]
   )
   ```
