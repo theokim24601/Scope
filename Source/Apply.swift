@@ -29,7 +29,7 @@ public extension Apply where Self: Any {
   ///
   ///  let org = Organization().apply {
   ///    $0.name = "podo"
-  ///    $0.member = Member(name: "esther", role: .owner)
+  ///    $0.member = Member(name: "jayce", role: .owner)
   ///  }
   @discardableResult
   func apply(_ block: ((Self) throws -> Void)) rethrows -> Self {

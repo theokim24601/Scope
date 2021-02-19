@@ -57,26 +57,26 @@ class ScopeTests: XCTestCase {
   func testApply() {
     let org = Organization().apply {
       $0.name = "podo"
-      $0.member = Member(name: "esther", role: .owner)
+      $0.member = Member(name: "jayce", role: .owner)
     }
 
     XCTAssertEqual(org.name, "podo")
-    XCTAssertEqual(org.member?.name, "esther")
+    XCTAssertEqual(org.member?.name, "jayce")
   }
 
   func testAlso() {
-    let member = Member(name: "esther", role: .owner)
+    let member = Member(name: "jayce", role: .owner)
     let org = Organization()
 
     org.also { print("new member") }
       .addMember(member)
 
-    XCTAssertEqual(org.member?.name, "esther")
+    XCTAssertEqual(org.member?.name, "jayce")
   }
 
   func testLet() {
     var org: Organization?
-    org = Organization(name: "podo", member: Member(name: "esther", role: .member))
+    org = Organization(name: "podo", member: Member(name: "jayce", role: .member))
 
     org?.member?.let {
       $0.role = .owner
@@ -90,7 +90,7 @@ class ScopeTests: XCTestCase {
     }
 
     XCTAssertEqual(org?.name, "new podo")
-    XCTAssertEqual(member?.name, "esther")
+    XCTAssertEqual(member?.name, "jayce")
   }
 
   func testWith() {

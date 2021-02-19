@@ -27,7 +27,7 @@ let org = Organization()
   .also { print("new podo org") }
   .apply {
     $0.name = "podo"
-    $0.member = Member(name: "Esther", role: .owner)
+    $0.member = Member(name: "jayce", role: .owner)
   }
 ```
 
@@ -37,7 +37,7 @@ They also can be used in return statements of functions returning the context ob
 func newPodoOrg() -> Organization {
   Organization().apply {
     $0.name = "podo"
-    $0.member = Member(name: "Esther", role: .owner)
+    $0.member = Member(name: "jayce", role: .owner)
   }
 }
 ```
@@ -49,7 +49,7 @@ Use `apply` for code blocks that don't return a value and mainly operate on the 
 ```swift
 let org = Organization().apply {
   $0.name = "podo"
-  $0.member = Member(name: "esther", role: .owner)
+  $0.member = Member(name: "jayce", role: .owner)
 }
 print(org)
 ```
@@ -59,7 +59,7 @@ print(org)
 Use `also` for additional actions that don't alter the object, such as logging or printing debug information.
 
 ```swift
-let member = Member(name: "esther", role: .owner)
+let member = Member(name: "jayce", role: .owner)
 let org = Organization()
 
 org.also { print("new member") }
@@ -81,7 +81,7 @@ numbers.map { $0 * 2 }
 
 ```swift
 var org: Organization?
-org = Organization(name: "podo", member: Member(name: "esther", role: .member))
+org = Organization(name: "podo", member: Member(name: "jayce", role: .member))
 
 org?.member?.let {
   $0.role = .owner // $0 is not nil inside '?.let {}' 

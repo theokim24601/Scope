@@ -27,7 +27,7 @@ public extension Also where Self: Any {
   
   ///  `also`
   ///
-  ///  let member = Member(name: "esther", role: .owner)
+  ///  let member = Member(name: "jayce", role: .owner)
   ///  let org = Organization()
   ///
   ///  org.also { print("new member") }

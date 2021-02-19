@@ -28,7 +28,7 @@ public extension Let where Self: Any {
   ///  `let`
   ///
   ///  org.member?.let {
-  ///    $0.name = "esther"
+  ///    $0.name = "jayce"
   ///    $0.role = .owner
   ///  }
   @discardableResult
