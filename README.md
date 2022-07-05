@@ -4,7 +4,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/Scope.svg?style=flat)](https://github.com/hb1love/Scope)
 [![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://github.com/hb1love/Scope)
 [![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager)
-[![Build Status](https://github.com/hb1love/Scope/workflows/CI/badge.svg?branch=master)](https://github.com/hb1love/Scope/actions)
+[![Build Status](https://github.com/hb1love/Scope/workflows/CI/badge.svg?branch=main)](https://github.com/hb1love/Scope/actions)
+[![codecov](https://codecov.io/gh/hb1love/Scope/branch/main/graph/badge.svg)](https://codecov.io/gh/hb1love/Scope)
 [![License](https://img.shields.io/github/license/hb1love/Scope)](LICENSE)
 
 Scoping Functions of Swift Style for Readable Code
