@@ -1,4 +1,4 @@
-// swift-tools-version:5.0
+// swift-tools-version:5.3
 
 import PackageDescription
 
@@ -16,13 +16,11 @@ let package = Package(
   dependencies: [],
   targets: [
     .target(
-      name: "Scope",
-      path: "Source"
+      name: "Scope"
     ),
     .testTarget(
       name: "ScopeTests",
-      dependencies: ["Scope"],
-      path: "Tests"
+      dependencies: ["Scope"]
     )
   ],
   swiftLanguageVersions: [.v5]
