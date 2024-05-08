@@ -1,12 +1,15 @@
 # Scope
 
-[![Swift](https://img.shields.io/badge/Swift-5.2-orange.svg)](https://swift.org)
-[![Platform](https://img.shields.io/cocoapods/p/Scope.svg?style=flat)](https://github.com/hb1love/Scope)
-[![CocoaPods](http://img.shields.io/cocoapods/v/Scope.svg)](https://github.com/hb1love/Scope)
-[![Swift Package Manager compatible](https://img.shields.io/badge/Swift%20Package%20Manager-compatible-4BC51D.svg?style=flat)](https://swift.org/package-manager)
-[![Build Status](https://github.com/hb1love/Scope/workflows/CI/badge.svg?branch=main)](https://github.com/hb1love/Scope/actions)
-[![codecov](https://codecov.io/gh/hb1love/Scope/branch/main/graph/badge.svg)](https://codecov.io/gh/hb1love/Scope)
-[![License](https://img.shields.io/github/license/hb1love/Scope)](LICENSE)
+<p align="center">
+<a href="https://swift.org" target="_blank"><img src="https://img.shields.io/badge/Swift-5.3-orange.svg"></a>
+<a href="https://cocoapods.org/pods/Scope" target="_blank"><img src="https://img.shields.io/cocoapods/p/Scope.svg?style=flat"></a>
+<a href="https://cocoapods.org/pods/Scope" target="_blank"><img src="http://img.shields.io/cocoapods/v/Scope.svg"></a>
+<a href="https://swift.org/package-manager" target="_blank"><img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-4BC51D.svg?style=flat"></a>
+<br />
+<a href="https://github.com/hb1love/Scope/actions"><img src="https://github.com/hb1love/Scope/workflows/CI/badge.svg?branch=main"></a>
+<a href="https://codecov.io/gh/hb1love/Scope" target="_blank"><img src="https://codecov.io/gh/hb1love/Scope/branch/main/graph/badge.svg"></a>
+<a href="LICENSE"><img src="https://img.shields.io/github/license/hb1love/Scope"></a>
+</p>
 
 Scoping Functions of Swift Style for Readable Code
 
@@ -28,7 +31,7 @@ let org = Organization()
   .also { print("new podo org") }
   .apply {
     $0.name = "podo"
-    $0.member = Member(name: "jayce", role: .owner)
+    $0.member = Member(name: "theo", role: .owner)
   }
 ```
 
@@ -38,7 +41,7 @@ They also can be used in return statements of functions returning the context ob
 func newPodoOrg() -> Organization {
   Organization().apply {
     $0.name = "podo"
-    $0.member = Member(name: "jayce", role: .owner)
+    $0.member = Member(name: "theo", role: .owner)
   }
 }
 ```
@@ -50,7 +53,7 @@ Use `apply` for code blocks that don't return a value and mainly operate on the 
 ```swift
 let org = Organization().apply {
   $0.name = "podo"
-  $0.member = Member(name: "jayce", role: .owner)
+  $0.member = Member(name: "theo", role: .owner)
 }
 print(org)
 ```
@@ -60,7 +63,7 @@ print(org)
 Use `also` for additional actions that don't alter the object, such as logging or printing debug information.
 
 ```swift
-let member = Member(name: "jayce", role: .owner)
+let member = Member(name: "theo", role: .owner)
 let org = Organization()
 
 org.also { print("new member") }
@@ -82,7 +85,7 @@ numbers.map { $0 * 2 }
 
 ```swift
 var org: Organization?
-org = Organization(name: "podo", member: Member(name: "jayce", role: .member))
+org = Organization(name: "podo", member: Member(name: "theo", role: .member))
 
 org?.member?.let {
   $0.role = .owner // $0 is not nil inside '?.let {}' 
